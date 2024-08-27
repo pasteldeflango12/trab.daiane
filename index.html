@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Desafio do Assassinato</title>
+    <style>
+        /* Adicionar estilo para a mensagem e link no canto superior esquerdo */
+        .mensagem-link {
+            display: none; /* Oculta o link de acesso ao site */
+        }
+
+        /* Garantir que os botões estejam acima do link */
+        button {
+            position: relative; /* Define o posicionamento relativo para permitir o ajuste do z-index */
+            z-index: 20; /* Garante que os botões fiquem acima do link */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="casa-mal-assombrada-a-noite_1639-24844.avif" alt="Cenário do passo 0">
+            <p>Após um assassinato misterioso na mansão dos Richters, você é chamado para investigar. Existem várias pistas e suspeitos. Está preparado para desvendar o crime?</p>
+            <button class="btn-proximo" data-proximo="1">Sim, estou pronto para investigar!</button>
+            <button class="btn-proximo" data-proximo="2">Ainda não, preciso de mais tempo.</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você decide começar a investigação. Onde você deseja procurar a primeira pista?</p>
+            <img src="detetivi.jpeg" alt="Cenário do passo 1">
+            <button class="btn-proximo" data-proximo="3">Vistoriar o escritório da vítima</button>
+            <button class="btn-proximo" data-proximo="4">Interrogar os membros da família</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você decide que ainda não está pronto e prefere se preparar melhor para a investigação. Enquanto se prepara, pensa nas possíveis pistas que pode ter perdido.</p>
+            <img src="inicioduvida.jpeg" alt="Imagem de preparação e reflexão">
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Ao vistoriar o escritório da vítima, você encontra uma pista crucial: um documento com uma lista de pessoas que tinham motivos para cometer o crime. Está pronto para seguir essa pista?</p>
+            <img src="fotoescritorio.jpeg" alt="Cenário do passo 3">
+            <button class="btn-proximo" data-proximo="5">Seguir a pista e interrogar os suspeitos</button>
+       </div>
+        <div class="passo" id="passo-4">
+            <p>Ao interrogar os membros da família, você descobre que todos tinham algo a esconder. Cada um deles tem uma história diferente. Agora você precisa decidir qual caminho seguir.</p>
+            <img src="interrogatorio.avif" alt="Cenário do passo 4">
+            <button class="btn-proximo" data-proximo="5">Seguir a pista e interrogar os suspeitos</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Após seguir a pista e interrogar os suspeitos, você descobre que o crime está ligado a um segredo sombrio do passado da família. Você está pronto para revelar a verdade e enfrentar o assassino?</p>
+            <img src="procurandopista.avif" alt="Cenário do passo 5">
+            <button class="btn-proximo" data-proximo="6">Sim, estou pronto para revelar a verdade!</button>
+            <button class="btn-proximo" data-proximo="7">Desistir e deixar o caso sem solução</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>O assassinato estava ligado à um desentendimento entre Derek Richter e seu filho Will Richter. Neste desentendimento Will mata o pai com uma facada, pois Derek ameaçava sua mãe que era ex exposa do Sr.Richter. Parabéns você solucionou o caso!</p>
+            <img src="cenario-passo0.webp" alt="caso resolvido ">
+        </div>
+        <div class="passo" id="passo-7">
+            <p>Você decide não enfrentar o caso e deixa o mistério sem solução. A mansão dos Richters permanece com seus segredos enterrados, e você se pergunta sobre o que poderia ter descoberto.</p>
+            <img src="detettivedepre.jpeg" alt="Imagem de reflexão e desânimo">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
