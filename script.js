@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const passos = document.querySelectorAll('.passo');
     let passoAtivo = 0;
